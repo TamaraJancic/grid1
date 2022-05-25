@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumb Galerija</title>
+    <style>
+        .body {
+           display: grid;
+           align-items: center;
+        }
+
+        .container{
+            max-width: 760px;
+            align-self: center;
+            
+        }
+        .row {
+           display: grid;
+           max-width: 760px;
+           height: auto;
+           flex-flow: row wrap;
+           grid-template-columns: repeat(5, 1fr);
+           grid-template-rows: auto;
+           grid-gap: 19px;
+           justify-content: center;   
+       }
+       .row::after{
+           content: '';
+           display: block;
+           clear: left;
+       }
+        .img{
+          width: 120px;
+          height: 80px;
+          align: center;
+        }
+        
+        .column {
+           width: 120px;
+           height: 100px;
+           background: linear-gradient(rgb(59, 145, 174) 75%, rgb(223, 218, 218) 25%); 
+           margin: 0px;
+           padding: 10px;
+           border-radius: 10px;
+           color: black;  
+           text-align: center;
+       }
+       @media screen and (max-width: 768px) {
+            .row{
+                grid-template-columns: repeat(3, 1fr);
+            }
+            } 
+       @media screen and (max-width: 414px) {
+            .row {
+                grid-template-columns: repeat(1, 1fr);
+            } 
+          }
+
+
+    </style>
+</head>
+<body> 
+    <h3>Gallery Heading</h3>
+    <div class="container">
+   
+    <div class="row">
+            <div class="column">
+            <img class="img" src="placeholder-image.png">
+            <div class="box1">Image Title</div>
+          </div>
+            <div class="column">
+            <img class="img" src="placeholder-image.png">
+            <div class="box2">Image Title</div>
+          </div>
+            <div class="column">
+            <img class="img" src="placeholder-image.png">
+            <div class="box3">Image Title</div>
+          </div>
+            <div class="column">
+            <img class="img" src="placeholder-image.png">
+            <div class="box4">Image Title</div>
+          </div>
+            <div class="column">
+            <img class="img" src="placeholder-image.png">
+            <div class="box5">Image Title</div>
+          </div>  
+            <div class="column">
+            <img class="img" src="placeholder-image.png">
+            <div class="box6">Image Title</div>
+          </div>
+            <div class="column">
+            <img class="img" src="placeholder-image.png">
+            <div class="box7">Image Title</div>
+          </div>
+            <div class="column">
+            <img class="img" src="placeholder-image.png">
+            <div class="box8">Image Title</div>
+          </div>
+            <div class="column">
+            <img class="img" src="placeholder-image.png">
+            <div class="box9" >Image Title</div>
+          </div>
+            <div class="column">
+            <img class="img" src="placeholder-image.png">
+            <div class="box10">Image Title</div>
+          </div>
+   </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+        est laborum.</p>
+     </div>
+</body>
+</html>
